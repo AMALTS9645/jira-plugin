@@ -1,0 +1,16 @@
+{
+  "name": "jira-global-page-custom-ui",
+  "version": "1.1.5",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "dependencies": {
+    "@forge/resolver": "1.6.8",
+    "form-data": "^4.0.2",
+    "node-fetch": "^3.3.2"
+  }
+}

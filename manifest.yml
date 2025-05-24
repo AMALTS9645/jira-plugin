@@ -1,0 +1,27 @@
+modules:
+  jira:globalPage:
+    - key: graphrag-hello-world-page
+      resource: main
+      resolver:
+        function: resolver
+      title: AI-Powered Ticket Analysis & Root Cause Explorer
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  runtime:
+    name: nodejs22.x
+  id: ari:cloud:ecosystem::app/bf0ed478-ac57-40e3-abdf-249f38e9f94e
+permissions:
+  scopes:
+    - read:jira-work
+  content:
+    styles:
+      - unsafe-inline
+  external:
+    fetch:
+      backend:
+        - https:link-demo/*
